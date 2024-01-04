@@ -20,17 +20,20 @@ like they know everything when they don’t just by looking the answers up ;)
 See here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder
 */
 
-function checkEven(num) {
-    if (num % 2 === 0) {
-        console.log(true);
+function isEven(num) {
+    /*
+    if (num % 2 == 0) {
+        //console.log(true);
         return true;
     } else {
-        console.log(false);
+        //console.log(false);
         return false;
     }
+    */
+    return (num % 2 === 0);
 }
 
-checkEven(34);
+//checkEven(34);
 /*
 Task 2
 ------
@@ -53,19 +56,28 @@ As always, the string results must match *exactly* what I’ve put here
 */
 
 function getExamResult(score) {
-    if(score > 100) {
-        console.log('Cheat');
-        return 'Cheat';
-    } else if (score >= 50) {
-        console.log('Pass');
-    } else if (score < 50) {
-        console.log('Fail');
-        return 'Fail';
-    } else if (score == 0) {
+    if(score === 0) {
         console.log('Epic fail');
         return 'Epic fail';
     }
+    
+    if (score > 100) {
+        console.log('Cheat');
+        return 'Cheat';
+    }
+
+    if (score < 50) {
+        console.log('Fail');
+        return 'Fail';
+    }
+
+    if (score >= 50) {
+        console.log('Pass');
+        return 'Pass';
+    }
+
+    return 'Fail';
 }
 
-getExamResult('80');
-getExamResult(100);
+//getExamResult(0);
+//getExamResult(100);
