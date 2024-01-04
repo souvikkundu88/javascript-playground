@@ -22,11 +22,15 @@ See here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Oper
 
 function checkEven(num) {
     if (num % 2 === 0) {
+        console.log(true);
         return true;
     } else {
+        console.log(false);
         return false;
     }
 }
+
+checkEven(34);
 /*
 Task 2
 ------
@@ -47,3 +51,21 @@ getExamResult(110) => 'Cheat'
 As always, the string results must match *exactly* what I’ve put here 
 (including case!), or the tests won’t pass!
 */
+
+function getExamResult(score) {
+    if(score > 100) {
+        console.log('Cheat');
+        return 'Cheat';
+    } else if (score >= 50) {
+        console.log('Pass');
+    } else if (score < 50) {
+        console.log('Fail');
+        return 'Fail';
+    } else if (score == 0) {
+        console.log('Epic fail');
+        return 'Epic fail';
+    }
+}
+
+getExamResult('80');
+getExamResult(100);
