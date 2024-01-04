@@ -39,6 +39,7 @@ extractNumber(‘GSX-9867990’); // returns 9867990
 */
 
 function extractNumber(a) {
-    let substring = Number(a.substr(4));
+    // let substring = Number(a.substr(4));
+    let substring = Number(a.replace('GSX-', ''));
     return substring;
 }
