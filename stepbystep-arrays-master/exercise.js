@@ -16,7 +16,6 @@ function remove(list, i) {
 }
 
 /*Task 2
-
 Write a function reversed(list) that takes an array of 
 strings, and returns a single which consists of all the 
 strings in the array, in reverse order, concatonated 
@@ -44,6 +43,7 @@ var joined = first + second;
 You’ll probably also have to use an if/else statement 
 or a ternary at some point...
 */
+
 
 
 /*Task 3
