@@ -44,7 +44,9 @@ You’ll probably also have to use an if/else statement
 or a ternary at some point...
 */
 
-
+function reversed(list) {
+    
+}
 
 /*Task 3
 
