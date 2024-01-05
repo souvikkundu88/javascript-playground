@@ -44,8 +44,19 @@ You’ll probably also have to use an if/else statement
 or a ternary at some point...
 */
 
+// create a function called reversed
+// create variable called result with empty value
+// reversed for loop to iterate through the array list
+// 
 function reversed(list) {
-    
+    var result = '';
+    for (var i = list.length - 1; i >= 0; i--) {
+        result = result + list[i];
+        if (i !== 0) {
+            result = result + ',';
+        }
+    }
+    return result;
 }
 
 /*Task 3
@@ -66,3 +77,11 @@ var scores = [50, 120, 180, 10];
 var percentages = calculatePercentages(scores, 200);
 // percentages: [25, 60, 90, 5]
 */
+
+function calculatePercentages(scores, totalPossibleScore) {
+    var percentages = [];
+    for (var i = 0; i < scores.length; i++) {
+        percentages.push((100/totalPossibleScore) * scores[i]);
+    }
+    return percentages;
+}
